@@ -1,0 +1,329 @@
+*{
+  margin: 0; 
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background: #86A7C5;
+  
+
+}
+p{
+  color: white;
+}
+
+#header{
+  width: 100%;
+  height: 100vh;
+  /* background-image: url(images/name.png); */
+  background-size: cover;
+  background-position: center;
+  padding-left: 0px;
+
+  
+}
+
+
+
+.container{
+  padding: 10px 10%;
+  
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 25px;
+}
+
+.logo{
+  width: 100px;
+  padding-left: 0px;
+ 
+}
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+a{
+  color:white;
+  text-decoration: none;
+  position: relative;
+}
+
+a::after{
+  content:'';
+  width: 0;
+  height: 3px;
+  background: #241B62;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+a:hover::after{
+  width: 100%;
+}
+
+.header-text{
+  color: white;
+  margin-top: 20%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.header-text h1{
+  font-size: 60px;
+  margin-top: 20px;
+}
+.header-text h2{
+  font-size: 40px;
+  
+}
+.header-text h1 span {
+  color:#241B62;
+}
+/* ------------about------------ */
+#about{
+  padding: 80px 0;
+  color:white;
+  
+
+}
+
+.row{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1{
+  flex-basis: 35%;
+
+}
+
+.about-col-1 img{
+  width: 100%;
+  border-radius: 50px;
+}
+
+.about-col-2{
+  flex-basis: 60%;
+}
+
+.sub-title{
+  font-size: 60px;
+  color: white;
+  
+}
+
+.aboutmeinfo{
+  font-size: 20px;
+}
+
+.quick-info{
+ margin: 20px 0 40px; 
+}
+
+
+.tabs{
+  margin-right:50px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 10px;
+  color: #241B62;
+}
+.tab-section{
+  color: white;
+}
+
+/*-------------work----------*/
+ #projects {
+  padding: 30px 0;
+
+}
+.works{
+  border:  solid #241B62;
+  border-radius: 10px;;
+}
+.work-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+
+}
+.work-list h3{
+  font-size: 25px;
+  color: white;
+  
+}
+.work-list p{
+  font-size: 20px;
+  color:#241B62;
+  margin-bottom: 5px;
+}
+
+.works img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.work-list div{
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-right: 10px;
+
+}
+.projects-list div i {
+  font-size:40px;
+  margin-bottom: 30px;
+  color:#241B62;
+} 
+
+/* -------- projs ---------*/
+.projects-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.projects-list div{
+  background: #86A7C5;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 300;
+  border-right: 10px;
+  
+
+}
+.proj{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  border:  solid #241B62;
+}
+
+.proj img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.layer h3{
+  font-size: 22px;
+  color:white;
+  
+}
+.layer p{
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #241B62;
+}
+
+.projects{
+  margin-bottom: 10px;
+}
+/* --------contact---------- */
+.contact-left{
+  flex-basis: 35%;
+}
+
+.contact-right{
+  flex-basis: 60%;
+}
+
+.contact-left p{
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+.contact-left p i {
+  color: #241B62;
+  margin-right: 15px;
+  font-size: 25px;
+}
+.social-icons{
+  margin-top: 30px;
+}
+
+.social-icons a{
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #241B62;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.social-icons a:hover{
+  color: white;
+  transform: translateY(-5px);
+}
+.btn{
+  background-color:  #241B62;
+  color: white;
+  padding: 14px;
+  margin-top: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.contact-right form{
+  width: 100%;
+}
+
+form input, form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: white;
+  padding: 15px;
+  margin: 8px 0;
+  color:#241B62;
+  font-size: 18px;
+  border-radius: 6px;;
+
+}
+
+.copyright{
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  font-weight: bold;
+  font-size: 18px;
+  background-color:#241B62
+}
+
+.copyright i{
+  color:red;
+}
+
+#msg{
+  color: green;
+  margin-top: 10px;
+  display: block;
+  font-weight: bolder;
+}
+
+/* ------------------ css for small screen ----------------- */
+/* come back to this when you have more time */
