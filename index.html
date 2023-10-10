@@ -15,17 +15,22 @@
       <div class="container">
         <nav>
           <img src="images/logo.png" class="logo">
-          <ul>
+          <ul id="sidemenu">
             <li><a href="#about">about</a> </li>
             <li><a href="#projects">projects</a> </li>
             <li><a href="#work">work</a> </li>
             <li><a href="#contact">contact </a> </li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-          <h1> hi, i'm <span>damla önder</span>!</h1>
-          <h2> welcome to my page </h2>
+          <h1> hi, i'm <span>damla önder</span></h1>
+          <h2> welcome to my page! </h2>
         </div>
+        <div class="snoopy">
+          <img src="images/snoopy.png">
+        </div> 
       </div>
 
     </div>
@@ -79,7 +84,9 @@
               <div class="layer">
                 <h3><i class="fa-solid fa-book"></i><a href="https://github.com/damlaonder/worldofbooks"> GoodReads Dupe</a></h3>
                 <p>
-                  my own version of GoodReads!! a continuing work in progress!
+                  my own version of GoodReads!! it is a series of landing pages filled
+                  with my different bookshelves: read, want to read, currently reading, and all. 
+                  <br>a continuing work in progress!
                 </p>
                 <img src="images/bookProj.png">
               </div>
@@ -87,10 +94,23 @@
             <div class="proj">
               <div class="layer">
                 <h3><i class="fa-solid fa-chart-simple"></i> <a href="https://github.com/damlaonder/goodreads-Data"> Numbers Behind the Pages</a> </h3>
-                <p>uses python & matplotlib to parse through my goodreads data and produce data visualizations</p>
+                <p>uses python & matplotlib to parse through my goodreads data and produce data visualizations! this is my way
+                  of analyzing my reading habits. 
+                </p>
               </div>
               <img src="images/stats.png">
             
+            </div>
+            <div class="proj">
+              <div class="layer">
+                <h3><i class="fa-regular fa-sun"></i><a href="https://github.com/damlaonder/skateclub"> Skate Club</a></h3>
+                <p>my attempt at creating a website to share a community!! the goal 
+                  was to highlight the club, how to join, and the amazing moments/people involved. 
+                  <br>a continuing work in progress!
+                </p>
+              </div>
+              <img src="images/skateclub.png">
+              
             </div>
             <div class="proj">
               <div class="layer">
@@ -192,6 +212,16 @@
           })
           .catch(error => console.error('Error!', error.message))
       })
+    </script>
+     <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
     </script>
 
 
