@@ -178,6 +178,7 @@ a:hover::after{
 .work-list h3{
   font-size: 25px;
   color: white;
+  margin-bottom: 3px;
   
 }
 .work-list p{
