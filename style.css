@@ -94,6 +94,15 @@ a:hover::after{
 .header-text h1 span {
   color:#241B62;
 }
+
+.snoopy img{
+  width:270px;
+  display: inline-block;
+}
+.snoopy{
+  text-align: center;
+  margin-top: 0px;
+}
 /* ------------about------------ */
 #about{
   padding: 80px 0;
@@ -199,7 +208,7 @@ a:hover::after{
 /* -------- projs ---------*/
 .projects-list{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
 }
@@ -212,17 +221,25 @@ a:hover::after{
   
 
 }
+
 .proj{
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+  display: inline-block;
   border:  solid #241B62;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 
 .proj img{
   width: 100%;
   border-radius: 10px;
   display: block;
+  align-self: flex-end;
+  margin-top: 5px;
 }
 
 .layer h3{
@@ -239,6 +256,7 @@ a:hover::after{
 .projects{
   margin-bottom: 10px;
 }
+
 /* --------contact---------- */
 .contact-left{
   flex-basis: 35%;
@@ -327,3 +345,112 @@ form input, form textarea{
 
 /* ------------------ css for small screen ----------------- */
 /* come back to this when you have more time */
+nav .fa-solid{
+  display: none;
+}
+
+
+@media only screen and (max-width: 600px){
+  .header-text{
+    color: white;
+    margin-top: 30%;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+    
+  }
+  .header-text h2{
+    font-size: 20px;
+    display: inline-block;
+    
+  }
+  .logo{
+    display: inline-block;
+    width:120px;
+  }
+  nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 10px;
+    font-size: 18px;
+  }
+  .skater{
+    width:120px;
+    display: inline-block;
+    margin-top: 20px;
+    padding-right: 50px;
+  }
+  nav .fa-solid{
+    display: block;
+    font-size: 25px;
+    margin-top: 10px;
+  }
+
+  nav ul{
+    background:#151f23;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+
+  }
+  nav ul li{
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fa-solid{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .header-text h1{
+    font-size: 45px;
+    margin-top: 20px;
+
+  }
+  .header-text h1 span {
+    color:#241B62;
+    font-size: 50px;
+    display: block;
+    
+  }
+  .header-text h2{
+    font-size: 35px;
+    
+  }
+
+  /* -------about-------- */
+  .about-col-1{
+    width:100%;
+    border-radius: 50px;
+    display: inline-block;
+  }
+  .about-col-2{
+    display: block;
+  }
+  .row{
+    display:block;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .sub-title{
+    font-size: 35px;
+    color: white;
+    
+  }
+
+  .contact-left .subtitle{
+    font-size:40px;
+  }
+  
+  
+}
