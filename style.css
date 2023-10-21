@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+
 html{
   scroll-behavior: smooth;
 }
@@ -118,7 +119,7 @@ a:hover::after{
 }
 
 .about-col-1{
-  flex-basis: 35%;
+  flex-basis: 20%;
 
 }
 
@@ -126,7 +127,10 @@ a:hover::after{
   width: 100%;
   border-radius: 50px;
 }
-
+.about-col-1 video{
+  height: 600px;
+  border-radius: 50px;
+}
 .about-col-2{
   flex-basis: 60%;
 }
